@@ -8,7 +8,7 @@ Install
 
 Install the package with ``pip``::
 
-    pip install -e git+git@github.com:dreadatour/sentry-statsd.git
+    pip install sentry-statsd
 
 
 Configuration

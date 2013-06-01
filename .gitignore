@@ -1,0 +1,15 @@
+# Python compiles files
+*.pyc
+*.pyo
+
+# Hate OS X
+.DS_Store
+
+# Some editors files
+._*
+*.swp
+
+# hidden files
+.*
+# except these
+!/.gitignore

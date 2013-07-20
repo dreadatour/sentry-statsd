@@ -20,5 +20,5 @@ class StatsdOptionsForm(forms.Form):
     )
     add_loggers = forms.BooleanField(
         required=False,
-        help_text='Add loggers names to StatsD metrics (overwise only project names will be used)'
+        help_text='Add loggers names to StatsD metrics (otherwise only project names will be used)'
     )

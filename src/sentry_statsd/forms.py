@@ -22,3 +22,6 @@ class StatsdOptionsForm(forms.Form):
         required=False,
         help_text='Add loggers names to StatsD metrics (overwise only project names will be used)'
     )
+    track_only_new = forms.BooleanField(
+        required=False,
+        help_text='Add statsd count to only new exceptions')

@@ -12,7 +12,7 @@ f.close()
 
 setup(
     name='sentry-statsd',
-    version='0.0.1',
+    version='0.0.2',
     author='Vladimir Rudnyh',
     author_email='dreadatour@gmail.com',
     url='http://github.com/dreadatour/sentry-statsd',

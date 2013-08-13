@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 install_requires = [
     'sentry>=5.3.3',
-    'pystatsd',
+    'statsd',
 ]
 
 f = open('README.rst')

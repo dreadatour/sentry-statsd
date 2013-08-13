@@ -46,6 +46,7 @@ class StatsdPlugin(Plugin):
         port = self.get_option('port', group.project)
         prefix = self.get_option('prefix', group.project)
         add_loggers = self.get_option('add_loggers', group.project)
+        track_only_new = self.get_option('track_only_new', False)
 
         metric = []
         metric.append(group.project.slug.replace('-', '_'))
@@ -54,4 +55,6 @@ class StatsdPlugin(Plugin):
         metric.append(group.get_level_display())
 
         client = statsd.StatsClient(host, port, prefix=prefix)
-        client.incr('.'.join(metric))
+
+        if not track_only_new or (is_new and track_only_new):
+            client.incr('.'.join(metric))
